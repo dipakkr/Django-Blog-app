@@ -10,6 +10,6 @@ Setup your own blog
 
 > python manage.py runserver
 
-Your server is now live on ~~~~http://127.0.0.1:8000~~~~
+Your server is now live on http://127.0.0.1:8000
 
-3. Head over to ~~~~http://127.0.0.1:8000/blog~~~~
+3. Head over to http://127.0.0.1:8000/blog
