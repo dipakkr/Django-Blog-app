@@ -13,4 +13,12 @@ class IndexView(generic.ListView):
     def get_queryset(self):
         """Return the all Posts"""
         return Post.objects.all()
+
+class DetailView(generic.DetailView):
+    template_name = 'blog/detail.html'
+    context_object_name = "blog_detail"
+
+    def get_object(self):
+        _id = self.kwargs.get("id")
+        return get_object_or_404(Post, id=_id)
     

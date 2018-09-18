@@ -8,7 +8,7 @@
 <div>
      {% for instance in blog_list %}
          <div>
-            <h2><a href="">{{instance.title}}</a></h2> 
+            <h2><a href="{% url 'blog:detail' instance.id %}">{{instance.title}}</a></h2> 
             <p><b><i> published on : {{instance.published_date}} </i></b></p>
             <p>{{instance.full_text}}</p>
          </div>

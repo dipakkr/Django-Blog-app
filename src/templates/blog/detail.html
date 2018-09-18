@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<div>
+        <div>
+                <h2><a href="">{{blog_detail.title}}</a></h2> 
+                <p><b><i> published on : {{blog_detail.published_date}} </i></b></p>
+                <p>{{blog_detail.full_text}}</p>
+             </div>
+</div>
+{% endblock %}
